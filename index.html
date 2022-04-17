@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0a525ee5a7.js" crossorigin="anonymous"></script>
     <title>Encriptador de texto - Alura ONE</title>
 </head>
@@ -12,31 +15,33 @@
 <body>
     <div id="main-container">
         <div id="box-logo" class="main-boxes">
-            <img src="img/Vector.png" alt="logo-alura">
+            <img src="img/icono-alura.png" alt="logo-alura">
         </div>
         
         <div id="box-interaction" class="main-boxes">
-            <div id="box-input">
-                <textarea type="text" placeholder="Ingrese el texto aquí..."></textarea>
+            <div id="box-input" class="box-interaction-format">
+                <textarea type="text" class="box-input-format" placeholder="Ingrese el texto aquí..."></textarea>
             </div>
-            <div id="note">
-                <img src="img/bi_exclamation-circle-fill.png" alt="advertencia"><p>Solo letras minúsculas y sin tíldes</p>
-            </div>
-            <div id="box-buttons">
-                <div id="botton1">
-                    <button id="encriptar"><span>Encriptar</span></button>
+            <div id="box-input2" class="box-interaction-format">
+                <div id="note" class="box-input-format">
+                    <img src="img/icono-exclamacion.png" alt="advertencia"><p>Solo letras minúsculas y sin tíldes</p>
                 </div>
-                <div id="button2">
-                    <button id="desencriptar"><span>Desencriptar</span></button>
+                <div id="box-buttons" class="box-input-format">
+                    <div id="button1" class="box-button-format">
+                        <button id="encriptar"><span>Encriptar</span></button>
+                    </div>
+                    <div id="button2" class="box-button-format">
+                        <button id="desencriptar"><span>Desencriptar</span></button>
+                    </div>
                 </div>
             </div>
         </div>
         
         <div id="box-results" class="main-boxes">
-            <div id="result">hola
+            <div id="result">
             </div>
             <div id="image">
-                <img src="img/Muñeco.png" alt="muñeco-buscador-de-textos">
+                <img src="img/munheco.png" alt="muñeco-buscador-de-textos">
             </div>
             <div id="text-default1">
                 <p>Ningún mensaje fue encontrado</p>
@@ -51,13 +56,13 @@
     </div>
 
     <footer>
+        <p>Challange Alura - Oracle ONE | Realizado por Gonzalo Díaz Rusconi</p>
         <ul>
             <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
             <li><a href="https://www.instagram.com/gonaa09/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a></li>
             <li><a href="https://github.com/gonadr09" target="_blank"><i class="fab fa-github"></i></a></li>
             <li><a href="https://www.linkedin.com/in/gonzalo-d%C3%ADaz-rusconi-9519bba2/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-            <p>Desarrolado por Gonzalo Díaz Rusconi</p>
+        </ul> 
     </footer>
 
     <script src="script.js"></script>

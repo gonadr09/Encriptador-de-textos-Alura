@@ -7,7 +7,7 @@ const resultado = document.querySelector("#result");
 const imagen = document.querySelector("#image");
 const textdefault1 = document.querySelector("#text-default1");
 const textdefault2 = document.querySelector("#text-default2");
-const boton_copiar = document.querySelector("#copiar");
+const boton_copiar = document.querySelector("#button-copy");
 
 var codigos = [ ["a","ai"], ["e","enter"], ["i","imes"], ["o","ober"], ["u","ufat"] ];
 
@@ -66,7 +66,6 @@ function copiar_al_portapapeles(){
         .catch(err => {
         console.log('Error', err);
     })
-    execCommand()
 }
 
 function mostrar_resultado(texto_procesado){
@@ -79,11 +78,11 @@ function mostrar_resultado(texto_procesado){
 }
 
 function mostrar_busqueda_vacia(){
-    resultado.style.display = "none";
+/*     resultado.style.display = "none";
     imagen.style.display = "block";
     textdefault1.style.display = "block";
     textdefault2.style.display = "block";
-    boton_copiar.style.display = "none";
+    boton_copiar.style.display = "none"; */
 }
 
 input.focus();

@@ -1,8 +1,12 @@
-* {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+html{
+    margin: 4vh 5vw 0vh 5vw;
     padding: 0;
     font-family: 'Inter';
     font-style: normal;
+    color: #0A3871;
+    line-height: 150%;
 }
 
 body{
@@ -10,44 +14,61 @@ body{
 }
 
 #main-container{
-    height: 95vh;
+    height: 88vh;
     display: flex;
     justify-content: space-evenly;
     align-items: stretch;
 }
 
 .main-boxes{
-    margin: 30px;
+    margin: 10px;
+}
+
+#box-logo{
+    display: block;
 }
 
 #box-interaction{
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 100vw;
 }
 
-    #box-input{
-        flex-grow: 1;
-    }
+.box-interaction-format{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-input-format{
+    width: 75%;
+}
+
+#box-input{
+    height: 81%;
+}
+#box-input2{
+    height: 19%;
+    margin-bottom: 15px;
+}
 
     #box-input textarea{
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 150%;
-        color: #0A3871;
+        margin: 10px;
         padding: 12px;
-        border: none;
-        height: 70%;
-        width: 100%;
-        resize: none;
-        background-color: #F3F5FC;
         margin-top: 100px;
-        margin-left: 10px;
+        height: 100%;
+        border: none;
+        outline: none !important;
+        resize: none;
+        background: #F3F5FC;
+        color: #0A3871;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 32px;
     }
 
-    #box-input textarea{
-        outline: none !important;
-        border: none;
-    }
     ::placeholder{
         font-weight: 400;
         font-size: 32px;
@@ -57,10 +78,7 @@ body{
 
     #note{
         display: flex;
-        margin-left: 15px;
-        font-weight: 400;
         font-size: 12px;
-        line-height: 150%;
         opacity: 0.8;
         color: #495057;
     }
@@ -79,21 +97,25 @@ body{
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
-        margin-bottom: 15px;
+        height: 45%;
+    }
+
+    .box-button-format{
+        width: 50%;
+        height: 100%;
+        padding: 0px;
     }
 
         #encriptar{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 24px;
-            margin: 10px;
-            width: 328px;
-            height: 67px;
-            left: 0px;
-            top: 0px;
-            background: #0A3871;
+            width: 80%;
+            height: 100%;
             border-radius: 24px;
+            background: #0A3871;
+        }
+
+        #encriptar:hover{
+            background: rgba(4, 30, 63, 0.900);
+            cursor: pointer;
         }
 
         #encriptar span{
@@ -106,18 +128,18 @@ body{
         }
 
         #desencriptar{ 
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 24px;
-            margin: 10px;
-            width: 328px;
-            height: 67px;
+            width: 80%;
+            height: 100%;
+            border-radius: 24px;
             background: #D8DFE8;
-            border: 1px solid #0A3871;
             box-sizing: border-box;
             border-radius: 24px;
-    }
+        }
+
+        #desencriptar:hover{
+            background: rgba(186, 193, 201, 0.900);
+            cursor: pointer;
+        }
 
         #desencriptar span{
             font-weight: 400;
@@ -136,16 +158,13 @@ body{
     background: white;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+    width: 43%;
 }
 
     #result{
-        width: 336px;
-        height: 700px;
-        left: 1032px;
-        top: 72px;
-        font-weight: 400;
+        width: 80%;
+        height: 95%;
         font-size: 24px;
-        line-height: 150%;
         padding: 25px;
         color: #495057;
         display: none;
@@ -154,28 +173,27 @@ body{
     #image{
         width: 336px;
         height: 304px;
+        margin-top: 100px;
         align-self: center;
         display: block;
     }
 
     #text-default1{ 
-        width: 300px;
-        height: 38px;
-        margin: 16px 32px;
+        margin-top: 20px;
         font-weight: 700;
         font-size: 24px;
-        line-height: 120%;
         text-align: center;
         color: #343A40;
         align-self: center;
         display: block;
     }
 
+    #text-default1 p{
+        margin: 20px 0px 0px 0px;
+    }
+
+
     #text-default2{
-        width: 300px;
-        height: 38px;
-        margin: 16px 32px;
-        font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         text-align: center;
@@ -184,37 +202,167 @@ body{
         display: block;
     }
 
-    #copiar{
-        width: 336px;
-        height: 67px;
-        left: 1032px;
-        top: 885px;
-        margin: 25px;
-        background: white;
-        border: 1px solid #0A3871;
-        box-sizing: border-box;
-        border-radius: 24px;
+    #button-copy{
+        width: 80%;
+        height: 15%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
         display: none;
     }
 
+    #copiar{
+        width: 93%;
+        height: 69%;
+        margin-top: 10px;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 24px;
+    }
+
+    #copiar:hover{
+        background: rgb(250, 250, 250);
+        cursor: pointer;
+    }
+
+    #copiar span{
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;           
+        color: #0A3871;
+        margin: auto;
+    }
+
 footer{
-    height: 20px;
+    height: 5vh;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
+footer p{
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+  }
+
 footer ul{
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
+    margin: 0px;
 }
 
 footer li{
     list-style: none;
-    margin: 0px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
   }
+
+footer a{
+    text-decoration: none;
+    color: #0A3871;
+    font-size: 20px;
+}
 
 footer a:hover{
     color: #343434;
+}
+
+@media (max-width: 1000px){
+    #main-container{
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        height: auto;
+    }
+
+    #box-logo{
+        margin-top: 30px;
+    }
+
+    .box-interaction-format{
+        width: 85vw;
+    }
+
+   #box-interaction{
+        width: 85vw;
+    }
+
+    .box-input-format{
+        width: 100%;
+    }
+
+    #box-input textarea{
+        margin-top: 10px;
+        height: 50vh;
+        width: 100%;
+    }
+
+    #encriptar{
+        width: 90%;
+        margin: 0% 5%;
+        padding: 5%;
+    }
+
+    #desencriptar{
+        width: 90%;
+        margin: 0% 5%;
+        padding: 5%;
+    }
+
+    #box-results{
+        width: 688px;
+        height: 133px;
+    }
+
+    #image{
+        display: none;
+    }
+
+    #box-results{
+        width: 85vw;
+        height: auto;
+    }
+
+    #text-default1 p{
+        margin: 5px;
+    }
+
+    #button-copy{
+        height: 80px;
+        margin-left: 5%;
+    }
+
+    footer{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 470px) and (max-height: 1050px){
+    html{
+        margin: 2vh 2vw 0vh 2vw;
+    }
+
+    .main-boxes{
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    #box-input textarea{
+        margin-top: 10px;
+        height: 40vh;
+        width: 100%;
+    }
+    #box-buttons{
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    #encriptar{
+        width: 190%;
+        margin: 0% 10% 5% 5%;
+        padding: 10%;
+    }
+    #desencriptar{
+        width: 190%;
+        margin: 5% 10% 5% 5%;
+        padding: 10%;
+    }
+
 }
